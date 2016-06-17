@@ -1,0 +1,36 @@
+﻿
+.Content_Title {
+    font-size:3em;
+}
+.Content_Description {
+    font-size:2em;
+}
+.Content_Text {
+    font-size:1em;
+}
+     /* Appear */
+@-webkit-keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}

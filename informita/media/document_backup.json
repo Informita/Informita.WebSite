@@ -1,0 +1,40 @@
+{
+  "Response": {
+    "id": "xmlsss",
+    "Content": [
+      {
+        "Text": {
+          "Title": "primo",
+          "Description": "Secondo",
+          "Text": "Texst"
+        },
+        "Media": {
+          "type": "2",
+          "Source": "https://www.youtube.com/watch?v=90159e-y7A0"
+        }
+      },
+      {
+        "Text": {
+          "Title": "primo",
+          "Description": "Secondo",
+          "Text": "Texst"
+        },
+        "Media": {
+          "type": "1",
+          "Source": "/media/pictures/people.jpg"
+        }
+      },
+      {
+        "Text": {
+          "Title": "primo",
+          "Description": "Secondo",
+          "Text": "Texst"
+        },
+        "Media": {
+          "type": "2",
+          "Source": "https://www.youtube.com/watch?v=OsOUcikyGRk"
+        }
+      }
+    ]
+  }
+}

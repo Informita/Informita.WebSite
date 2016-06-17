@@ -1,0 +1,153 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="base.master.vb" Inherits="informita.base"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+     <link rel="icon" type="image/png"  href="/media/icons/favico.png">
+    <title>UAB Informita </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager" runat="server"></telerik:RadScriptManager>
+        <telerik:RadSkinManager ID="RadSkinManager" runat="server" Skin="Bootstrap">
+            <TargetControls>
+                <telerik:TargetControl ControlID="form1" ControlsToApplySkin="RadAjaxLoadingPanel, RadAsyncUpload, RadButton, RadCalendar, RadColorPicker, RadComboBox, RadContextMenu, RadDataPager, RadDateInput, RadDatePicker, RadDateTimePicker, RadDialogOpener, RadDock, RadDockLayout, RadDockZone, RadEditor, RadFileExplorer, RadFilter, RadFormDecorator, RadGrid, RadImageEditor, RadInputControl, RadInputManager, RadLightBox, RadListBox, RadListView, RadMaskedTextBox, RadMenu, RadMultiPage, RadNotification, RadNumericTextBox, RadPane, RadPanelBar, RadProgressArea, RadRating, RadRibbonBar, RadRotator, RadScheduler, RadSiteMap, RadSlider, RadSpell, RadSplitBar, RadSplitter, RadTab, RadTabStrip, RadTagCloud, RadTextBox, RadTimePicker, RadTimeView, RadTreelist, RadToolBar, RadToolTip, RadTreeView, RadUpload, RadWindow, RadWindowManager, RadDataForm, RadLabel" Skin="Glow" />
+            </TargetControls>
+        </telerik:RadSkinManager>
+        <telerik:RadAjaxManager ID="RadAjaxManager" runat="server" DefaultLoadingPanelID="RadAjaxLoadingPanel">
+        </telerik:RadAjaxManager>
+        <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel" runat="server" InitialDelayTime="1" AnimationDuration="3">
+        </telerik:RadAjaxLoadingPanel>
+        <div class="RadPageLayout_Wallpaper"></div>
+        <telerik:RadPageLayout ID="RadPageLayout" runat="server" Width="100%" >
+            <Rows>
+                <telerik:LayoutRow runat="server" ID="LayoutRow_Header">
+                    <Content>
+                        <telerik:RadNavigation ID="RadNavigation" runat="server" MenuButtonPosition="Left" RenderMode="Lightweight" CssClass="RadNavigation_">
+                            <Nodes>
+                                <telerik:NavigationNode>
+                                    <NodeTemplate>
+                                        <telerik:RadPageLayout runat="server">
+                                            <Rows>
+                                                <telerik:LayoutRow>
+                                                    <Columns>
+                                                        <telerik:LayoutColumn HiddenXs="true" HiddenSm="true">
+                                                            <asp:Image ID="Image_down" runat="server" ImageUrl="~/media/logo/cloud_down.png" />
+                                                        </telerik:LayoutColumn>
+                                                        <telerik:LayoutColumn HiddenLg="true" HiddenMd="true" HiddenXl="true">
+                                                            <asp:Image ID="image_mini" runat="server" ImageUrl="~/media/logo/cloud_mini.png" />
+                                                        </telerik:LayoutColumn>
+                                                    </Columns>
+
+                                                </telerik:LayoutRow>
+                                            </Rows>
+                                        </telerik:RadPageLayout>
+                                    </NodeTemplate>
+                                    <ContentTemplate></ContentTemplate>
+                                </telerik:NavigationNode>
+                                <telerik:NavigationNode Visible="false" >
+                                    <Nodes>
+                                        <telerik:NavigationNode runat="server" ID="NavigationNode_ContentMenu" Text="Menu">
+                                            <NodeTemplate>
+                                            </NodeTemplate>
+                                            <ContentTemplate></ContentTemplate>
+                                        </telerik:NavigationNode>
+                                    </Nodes>
+                                </telerik:NavigationNode>
+
+                            </Nodes>
+                        </telerik:RadNavigation>
+                    </Content>
+                </telerik:LayoutRow>
+                <telerik:LayoutRow ID="LayoutRow_Content">
+                    <Content>
+
+                        <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder_Content">
+                        </asp:ContentPlaceHolder>
+                    </Content>
+                </telerik:LayoutRow>
+                <telerik:LayoutRow ID="LayoutRow_Footer">
+                    <Content>
+                    </Content>
+                </telerik:LayoutRow>
+            </Rows>
+        </telerik:RadPageLayout>
+
+    </form>
+</body>
+</html>
+
+
+
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+     <link rel="icon" type="image/png"  href="/media/icons/favico.png">
+    <title>UAB Informita </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager" runat="server"></telerik:RadScriptManager>
+        <telerik:RadSkinManager ID="RadSkinManager" runat="server" Skin="Bootstrap">
+            <TargetControls>
+                <telerik:TargetControl ControlID="form1" ControlsToApplySkin="RadAjaxLoadingPanel, RadAsyncUpload, RadButton, RadCalendar, RadColorPicker, RadComboBox, RadContextMenu, RadDataPager, RadDateInput, RadDatePicker, RadDateTimePicker, RadDialogOpener, RadDock, RadDockLayout, RadDockZone, RadEditor, RadFileExplorer, RadFilter, RadFormDecorator, RadGrid, RadImageEditor, RadInputControl, RadInputManager, RadLightBox, RadListBox, RadListView, RadMaskedTextBox, RadMenu, RadMultiPage, RadNotification, RadNumericTextBox, RadPane, RadPanelBar, RadProgressArea, RadRating, RadRibbonBar, RadRotator, RadScheduler, RadSiteMap, RadSlider, RadSpell, RadSplitBar, RadSplitter, RadTab, RadTabStrip, RadTagCloud, RadTextBox, RadTimePicker, RadTimeView, RadTreelist, RadToolBar, RadToolTip, RadTreeView, RadUpload, RadWindow, RadWindowManager, RadDataForm, RadLabel" Skin="Glow" />
+            </TargetControls>
+        </telerik:RadSkinManager>
+        <telerik:RadAjaxManager ID="RadAjaxManager" runat="server" DefaultLoadingPanelID="RadAjaxLoadingPanel">
+        </telerik:RadAjaxManager>
+        <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel" runat="server" InitialDelayTime="1" AnimationDuration="3">
+        </telerik:RadAjaxLoadingPanel>
+        <div class="RadPageLayout_Wallpaper"></div>
+        <telerik:RadPageLayout ID="RadPageLayout" runat="server" Width="100%" CssClass="RadPageLayout_Body">
+            <Rows>
+                <telerik:LayoutRow runat="server" ID="LayoutRow_Header">
+                    <Content>
+                        <telerik:RadNavigation ID="RadNavigation" runat="server" MenuButtonPosition="Left" RenderMode="Lightweight" CssClass="RadNavigation_">
+                            <Nodes>
+                                <telerik:NavigationNode>
+                                    <NodeTemplate>
+                                        <telerik:RadPageLayout runat="server">
+                                            <Rows>
+                                                <telerik:LayoutRow>
+                                                    <Columns>
+                                                        <telerik:LayoutColumn HiddenXs="true" HiddenSm="true">
+                                                            <asp:Image ID="Image_down" runat="server" ImageUrl="~/media/logo/cloud_down.png" />
+                                                        </telerik:LayoutColumn>
+                                                        <telerik:LayoutColumn HiddenLg="true" HiddenMd="true" HiddenXl="true">
+                                                            <asp:Image ID="image_mini" runat="server" ImageUrl="~/media/logo/cloud_mini.png" />
+                                                        </telerik:LayoutColumn>
+                                                    </Columns>
+
+                                                </telerik:LayoutRow>
+                                            </Rows>
+                                        </telerik:RadPageLayout>
+                                    </NodeTemplate>
+                                </telerik:NavigationNode>
+
+                            </Nodes>
+                        </telerik:RadNavigation>
+                    </Content>
+                </telerik:LayoutRow>
+                <telerik:LayoutRow ID="LayoutRow_Content">
+                    <Content>
+
+                        <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder_Content">
+                        </asp:ContentPlaceHolder>
+                    </Content>
+                </telerik:LayoutRow>
+                <telerik:LayoutRow ID="LayoutRow_Footer">
+                    <Content>
+                    </Content>
+                </telerik:LayoutRow>
+            </Rows>
+        </telerik:RadPageLayout>
+
+    </form>
+</body>
+</html>--%>

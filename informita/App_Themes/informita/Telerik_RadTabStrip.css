@@ -1,0 +1,39 @@
+﻿
+.Telerik_RadTabStrip {
+  background-color: rgba(144, 144, 144,0.3);
+    position:fixed;
+    z-index:3;
+    top:0;
+    right:0;
+}
+.rtsLevel1 , .rtsUL {
+        border-color: transparent !important;
+}
+
+.rtsLI {
+ background-color:transparent;
+ color:rgba(0, 0, 0,0.7);
+ transition:all 0.8s ease;
+}
+.rtsLI:hover {
+ background-color:rgba(204, 204, 204,1);
+  color:white;
+
+}
+
+.RadTab_CssClass , .RadTab_HoveredCssClass, .RadTab_SelectedCssClass {
+        /*border-color: transparent !important;*/
+        /*border-color: red !important;
+
+        background-color:aquamarine!important;*/
+
+}
+.RadTab_CssClass {
+    border-color: transparent !important;
+}
+.RadTab_HoveredCssClass {
+
+}
+.RadTab_SelectedCssClass {
+
+}

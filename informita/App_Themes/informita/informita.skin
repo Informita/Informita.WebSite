@@ -1,0 +1,7 @@
+﻿
+ <asp:Image  runat="server" SkinID="48-Geo" ImageUrl="http://www.informita.giammichelegalia.com/public/images/icons8/48/maps/geo_fence-48.png"/>
+ <asp:Image  runat="server" SkinID="48-Users" ImageUrl="http://www.informita.giammichelegalia.com/public/images/icons8/48/users/conference-48.png"/>
+ <asp:Image  runat="server" SkinID="48-ToDo" ImageUrl="http://www.informita.giammichelegalia.com/public/images/icons8/48/Ecommerce/sell-48.png"/>
+
+
+

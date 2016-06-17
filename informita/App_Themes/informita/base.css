@@ -1,0 +1,65 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext);
+
+body {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.RadPageLayout_Wallpaper {
+    position: fixed;
+    background-image: url(../../media/wallpapers/wallpaper.JPG);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.RadNavigation, .RadNavigation_Bootstrap, .rnvRootGroupWrapper, .rnvRootGroup, .rnvUL
+/*, .RadNavigation:hover, .RadNavigation_Bootstrap:hover, .rnvRootGroupWrapper:hover, .rnvRootGroup:hover, .rnvUL:hover*/
+ {
+    background-color: transparent !important;
+    /*border-color: transparent !important;*/
+ position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*height:200px;*/
+    z-index: 2;
+    border-color: transparent !important;
+    background-color: white !important;
+}
+
+.rnvRootGroupWrapper {
+    border-color: transparent !important;
+
+}
+.rnvRootGroupWrapper {
+    border-color: transparent !important;
+
+}
+.rnvUL {
+}
+/*.RadPageLayout_Body {
+    position: fixed;
+    top: 170px;
+}*/
+
+.RadPageView {
+    animation: appear 1s ease-in 1;
+    background-color: rgba(85, 85, 85,0.8);
+    color:white;
+}
+.RadPageLayout_ContentList {
+    animation: appear 1s ease-in 1;
+    background-color: rgba(85, 85, 85,0.8);
+    color:white;
+}
+
+/*@media (max-width: 980px) {
+    div.RadMediaPlayer {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}*/
